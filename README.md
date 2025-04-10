@@ -40,29 +40,26 @@ Before running the script, make sure you have the following installed:
 
 ### How it Works
 
-1. **Authenticate and Sign In**
-The script uses the Flickr API to sign in to your account using the provided API key and secret.
+1. **Authenticate and Sign In**: The script uses the Flickr API to sign in to your account using the provided API key and secret.
 
-2. **Gather Following List**
-It fetches your following list—these are the people you are following.
+2. **Gather Following List**: It fetches your following list—these are the people you are following.
 
-3. **Identify Non-Mutual Followers**
-The script checks who you follow, but who isn’t following you back.
+3. **Identify Non-Mutual Followers**: The script checks who you follow, but who isn’t following you back.
 
-4. **Browser Automation (Selenium)**
-Once non-mutual followers are identified, the script opens a Chromium browser (via Selenium) and logs into your Flickr account.
+4. **Browser Automation (Selenium)**: Once non-mutual followers are identified, the script opens a Chromium browser (via Selenium) and logs into your Flickr account.
 
-5. **Unfollow Non-Mutual Followers**
-The script automatically unfollows those who don’t follow you back.
+5. **Unfollow Non-Mutual Followers**: The script automatically unfollows those who don’t follow you back.
 
 
 ---
 
 ### Notes
 
-- Flickr API Limitations: Unfortunately, Flickr doesn't allow direct unfollowing through their API. Therefore, browser automation is used to handle this process.
+- Flickr API Limitations: Unfortunately, Flickr doesn't allow direct unfollowing through their API. Therefore, browser automation is used to handle this process. This may not be the most elegant solution, but it gets the job done!
 
-- Browser Automation: This may not be the most elegant solution, but it gets the job done!
+- This script will take a bit of time to run, depending on how many users that you're following. While this program does open another web browser, you're free to do other work on your device while the script performs this task. Do NOT let your device go to sleep.
+
+- Additionally, check out my personal Flickr here. https://www.flickr.com/photos/188832114@N08/
 
 ---
 
